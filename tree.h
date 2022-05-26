@@ -26,7 +26,6 @@ int size(struct node *t);
 int height(struct node *t);
 int new_height(struct node *t);
 
-struct binary_tree *add_item(struct binary_tree *t, T v);
 
 
 
