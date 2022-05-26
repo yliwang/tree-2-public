@@ -1,1 +1,6 @@
-# tree-2-public
+A binary search tree (BST) has the property that a node is greater than its left child, and less than its right child (of course, we mean value associated with a node). 
+In this project, we will check whether a binary tree is a BST or not. a prototype function is already provided in bst.c, namely, is_bst( struct binary_tree *t ), which should not be modified in any way, another prototype function called is_bst_recursive( struct node *t, int *flag), is the one that actually performs the job.  The basic idea is: we compare a node with its left and right child, if the BST property keeps, we further proceed to its left child ( if it exists ) and right child (if it exists), in a similary manner, by calling is_bst_recursive recurivelly, otherwise, we set the state in flag, and return from the function. As the function is recursively called, so once enter the fuction one should immediately examine, whether *flag is zero or not, if not, return from the function directly, without other processing.
+One is required to write code in is_bst_recursive( struct node *t, int *flag ) to impelement the job.
+In main.c, one can write code to test the implementation.
+Other files, defs.h, tree.h, and tree.c should not be modified in any cicrumstances.
+For submission, only bst.c is needed.
